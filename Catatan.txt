@@ -1,0 +1,247 @@
+
+
+1 	admin  ------> admin ,rianto
+2 	kepalalab   ---> kepalalab 
+3 	trainer   --->trainer  
+4 	member   --> member
+5 	trainee  --> trainee
+
+
+admin --> 	-pengguna
+				-member
+				-operator
+				-trainer
+				-trainee
+			-kursus 
+			-ruangan
+			-matepelejaran
+			-presensi trainer
+
+ kepalab  -> -kosong
+
+ trainer --> -data silabus
+ 			 -data materi
+ 			 -buat tugas
+
+ member --> - Daftar Pelatihan
+ 			- Pelatihan belum lunas
+ 			- pelatihan yang di ikuti
+ 			- bahan pelaltian
+ 			- histori pembayaran
+admin
+----------------------------------------------------------
+      <nav id="sidenav" class="sidenav-collapse collapse">
+        <ul class="sidenav">                     
+          <li class="sidenav-heading">Profil</li>
+          <li class="sidenav-item ">
+            <a href="http://localhost/sisantro/index.php/admin/biodata/tampilBiodata">
+              <span class="sidenav-icon icon icon-user"></span>
+              <span class="sidenav-label">Biodata</span>
+            </a>
+          </li>
+
+          <li class="sidenav-heading">Managemen</li>
+          <li class="sidenav-item has-subnav active">
+            <a href="#" aria-haspopup="true">
+              <span class="sidenav-icon icon icon-user"></span>
+              <span class="sidenav-label">Pengguna</span>
+            </a>
+
+            <ul class="sidenav-subnav collapse">
+              <li class="active"><a href="http://localhost/sisantro/index.php/admin/manage_member/listMember">Member</a></li>
+              <li class=""><a href="http://localhost/sisantro/index.php/admin/manage_operator/listOperator">Operator</a></li>
+              <li class=""><a href="http://localhost/sisantro/index.php/admin/manage_trainer/listTrainer">Trainer</a></li>
+              <li class=""><a href="http://localhost/sisantro/index.php/admin/manage_trainee/listTrainee">Trainee</a></li>
+
+            </ul>
+
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="http://localhost/sisantro/index.php/admin/manage_course/listCourse" aria-haspopup="true">
+              <span class="sidenav-icon icon icon-graduation-cap"></span>
+              <span class="sidenav-label">Kursus</span>
+            </a>
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="http://localhost/sisantro/index.php/admin/manage_room/listRoom">
+              <span class="sidenav-icon icon icon-building"></span>
+              <span class="sidenav-label">Ruangan</span>
+            </a>
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="http://localhost/sisantro/index.php/admin/manage_mapel/listMatapelajaran">
+              <span class="sidenav-icon icon icon-pencil"></span>
+              <span class="sidenav-label">Matapelajaran</span>
+            </a>
+          </li>
+          
+          <li class="sidenav-heading">Dokumentasi</li>
+
+          <li class="sidenav-item ">
+            <a href="#">
+              <span class="sidenav-icon icon icon-book"></span>
+              <span class="sidenav-label">Presensi Trainee</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </nav>
+----------------------------------------------------------
+menu member
+
+      <nav id="sidenav" class="sidenav-collapse collapse">
+        <ul class="sidenav">
+          <li class="sidenav-heading">Profil</li>
+          <li class="sidenav-item active">
+            <a href="#">
+              <span class="sidenav-icon icon icon-user"></span>
+              <span class="sidenav-label">Biodata</span>
+            </a>
+          </li>
+
+          <li class="sidenav-heading">Info Pelatihan</li>
+          <li class="sidenav-item ">
+            <a href="#">
+              <span class="sidenav-icon icon icon-graduation-cap"></span>
+              <span class="sidenav-label">Daftar Pelatihan</span>
+            </a>
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="#">
+              <span class="sidenav-icon icon icon-folder"></span>
+              <span class="sidenav-label">Pelatihan Belum Lunas</span>
+            </a>
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="#">
+              <span class="sidenav-icon icon icon-folder"></span>
+              <span class="sidenav-label">Pelatihan Yang Diikuti</span>
+            </a>
+          </li>
+
+          <li class="sidenav-item ">
+            <a href="">
+              <span class="sidenav-icon icon icon-hdd-o"></span>
+              <span class="sidenav-label">Bahan Pelatihan</span>
+            </a>
+          </li>
+
+          <li class="sidenav-heading">Dokumentasi</li>
+          <li class="sidenav-item ">
+            <a href="#">
+              <span class="sidenav-icon icon icon-credit-card"></span>
+              <span class="sidenav-label">Histori Pembayaran</span>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </nav>
+
+----------------------------------------------------------
+trainer
+<nav id="navbar" class="navbar-collapse collapse">
+            <button class="sidenav-toggler hidden-xs" title="Collapse sidenav ( [ )" aria-expanded="true" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="bars">
+                <span class="bar-line bar-line-1 out"></span>
+                <span class="bar-line bar-line-2 out"></span>
+                <span class="bar-line bar-line-3 out"></span>
+                <span class="bar-line bar-line-4 in"></span>
+                <span class="bar-line bar-line-5 in"></span>
+                <span class="bar-line bar-line-6 in"></span>
+              </span>
+            </button>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="visible-xs-block">
+                <h4 class="navbar-text text-center">Hi, Teddy Wilson</h4>
+              </li>
+              <li class="hidden-xs hidden-sm">
+                <form class="navbar-search navbar-search-collapsed">
+                  <div class="navbar-search-group">
+                    <input class="navbar-search-input" type="text" placeholder="Search for people, companies, and more&hellip;">
+                    <button class="navbar-search-toggler" title="Expand search form ( S )" aria-expanded="false" type="submit">
+                      <span class="icon icon-search icon-lg"></span>
+                    </button>
+                    <button class="navbar-search-adv-btn" type="button">Advanced</button>
+                  </div>
+                </form>
+              </li>
+
+                            <li class="dropdown hidden-xs">
+                <button class="navbar-account-btn" data-toggle="dropdown" aria-haspopup="true">
+                  
+                                      <img class="rounded" width="36" height="36" src="http://localhost/sisantro/uploads/foto/foto_Trainer_2017-01-29.png"> 
+                   
+                  
+                  Trainer                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="upgrade.html">
+                      <h5 class="navbar-upgrade-heading">
+                        Jadi Pelajar Sekarang
+                        <small class="navbar-upgrade-notification">Dapatkan kelebihannya</small>
+                      </h5>
+                    </a>
+                  </li>
+                  <li class="divider"></li>
+                  
+                
+                  
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="http://localhost/sisantro/index.php/login/login_user/logout">Sign out</a></li>
+                </ul>
+              </li>
+             
+              <li class="visible-xs-block">
+                <a href="profile.html">
+                  <span class="icon icon-user icon-lg icon-fw"></span>
+                  Profile
+                </a>
+              </li>
+              <li class="visible-xs-block">
+                <a href="login-1.html">
+                  <span class="icon icon-power-off icon-lg icon-fw"></span>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+
+
+proses daftar
+
+- from-daftar.php 
+- proses kirim emial --- klik code jika ditemukan maka silahkan melengkapi data
+iput nama,username, alamat, password, dan syarat pdf...
+
+masuk ke daftar pendaftaran member...
+---------------------------------------
+daftar pendaftaran member.....
+---------------------------------------
+
+daftar peserta....
+
+-----------------------------------------
+pembayaran...
+konfrimasi pembayaran
+..........................................
+melakukan kursus,
+melakukan ujian
+hasil nilai ujian....
+jika lulus cetak sertifikat ..
+
+------------------------------------------
+laporan pembayaran peserta
+laporan peserta lulus ujian
+laporan nilai peserta
+-------------------------------------------
